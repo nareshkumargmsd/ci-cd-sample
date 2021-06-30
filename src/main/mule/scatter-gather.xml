@@ -17,7 +17,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 					<set-variable value="#[payload.firstNumber * payload.secondNumber]" doc:name="Set Variable" doc:id="f7d1b582-8787-4e46-bbeb-a918d5934ab5" variableName="result" />
 					<error-handler >
 						<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="bbaf8882-f82a-4e02-b8ff-9750a6f310c5" >
-							<logger level="INFO" doc:name="Logger" doc:id="7451a404-d1c6-46ae-9e0a-7c8fb2e399e6" message="success"/>
+							<logger level="INFO" doc:name="Logger" doc:id="7451a404-d1c6-46ae-9e0a-7c8fb2e399e6" message="successs"/>
 						</on-error-continue>
 					</error-handler>
 				</try>
@@ -27,7 +27,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 					<set-variable value="#[payload.firstNumber + payload.secondNumber]" doc:name="Set Variable" doc:id="4793d7f6-5bbe-40b2-b59b-2f05f8a4853c" variableName="result" />
 					<error-handler >
 						<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="74aa23b0-ac22-4e48-aff3-9d1b15694040" >
-							<logger level="INFO" doc:name="Logger" doc:id="2d458581-4bc3-48fe-908e-3abed43770fa" message="success"/>
+							<logger level="INFO" doc:name="Logger" doc:id="2d458581-4bc3-48fe-908e-3abed43770fa" message="multiply successs"/>
 						</on-error-continue>
 					</error-handler>
 				</try>
