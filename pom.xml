@@ -17,6 +17,7 @@
 
 		<app.runtime>4.3.0-20210322</app.runtime>
 		<mule.maven.plugin.version>3.5.1</mule.maven.plugin.version>
+		<sonar.sources>src/</sonar.sources>
 	</properties>
 
 	<build>
@@ -34,14 +35,15 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.3.0</muleVersion>
-						<username>nareshmsd</username>
+						<muleVersion>${app.runtime}</muleVersion>
+						<username>nareshgmsd24aug</username>
 						<password>Naresh123</password>
+						<server>${server}</server>
 						<environment>Sandbox</environment>
-						<applicationName>cicdsamplex</applicationName>
-						<businessGroup>Mulesoft</businessGroup>
-						<workers>1</workers>
-						<workerType>Micro</workerType>
+						<applicationName>ci-cdsample24aug</applicationName>
+						<businessGroup>prowess</businessGroup>
+						<workers>${workers}</workers>
+						<workerType>${workerType}</workerType>
 						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 					<classifier>mule-application</classifier>
